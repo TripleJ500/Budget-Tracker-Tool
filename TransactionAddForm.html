@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Transaction</title>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    </head>
+    <body>
+        <h1>Adding A Transaction</h1>
+        <form action = "TransactionAddProcess.php" method = "post">
+            <label for = "amount"> Amount of the Transaction: </label>
+                <input type = "text" id = "amount" name = "amount">
+            <label for = "company"> Compnay: </label>
+                <input type = "text" id = "company" name = "company">
+            <label for = "purchaseDate"> Date of Transaction: </label>
+                <input type = "datetime" id = "purchaseDate" name = "purchaseDate" value = "YYYYMMDD">
+                <label>For example, April 20th, 2022 would be entered as: 20220420</label>
+                <br><br>
+            <label for = "frequency"> Reoccuring Transaction?: </label>
+                <select id = "frequency" name = "frequency"> 
+                    <option value = "" selected></option>
+                    <option value = "One-Time" >One-Time</option>
+                    <option value = "Weekly"   >Weekly</option>
+                    <option value = "Monthly"  >Monthly</option>
+                    <option value = "Quarterly">Quarterly</option>
+                    <option value = "Annually" >Annually</option>
+                </select>
+            <label for = "transactionType"> What Type of Transaction was this?: </label>
+                <select id = "transactionType" name = "transactionType"> 
+                    <option value = "" selected></option>
+                    <option value = "Gas">Gas</option>
+                    <option value = "Bill">Bill</option>
+                    <option value = "Food">Food</option>
+                    <option value = "Other">Other</option>
+                    <option value = "Deposit">Deposit</option>
+                    <option value = "Shopping">Shopping</option>
+                    <option value = "Groceries">Groceries</option>
+                    <option value = "Entertainment">Entertainment</option>
+                </select>
+            <input type = "submit" name = "submit" value = "Submit Information"> 
+        </form>
+    </body>
+</html>

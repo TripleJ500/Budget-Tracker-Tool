@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>View Your Transactions</title>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    </head>
+    <body>
+        <h1> View Transactions</h1>
+        <form action = "TransactionQueryProcess.php" method = "post">    
+            <label for = "transactionID"> Search By Transaction ID: </label>
+                <input type = "text" id = "transactionID" name = "transactionID">
+                <br/>
+            <label>OR</label>
+            <br/><br/>
+            <label for = "purchaseDate"> Search by Month and Year: </label>
+                <select id = "purchaseDate" name = "month"> 
+                    <option value = "" selected></option>
+                    <option value = "01">January</option>
+                    <option value = "02">February</option>
+                    <option value = "03">March</option>
+                    <option value = "04">April</option>
+                    <option value = "05">May</option>
+                    <option value = "06">June</option>
+                    <option value = "07">July</option>
+                    <option value = "08">August</option>
+                    <option value = "09">September</option>
+                    <option value = "10">October</option>
+                    <option value = "11">November</option>
+                    <option value = "12">December</option>
+                </select>
+                <input type = "text" id = "purchaseDate" name = "year">
+                <br/>
+            <label>OR</label>
+            <br/><br/>
+            <label for = "showAll"> Show all Transactions?</label>
+            <br/>
+            <label>
+                <input type = "radio" id = "showAll" name = "response" value = 0 checked> No </input>
+                <br/>
+            </label>
+            <label>
+                <input type = "radio" id = "showAll" name = "response" value = 1> Yes </input>
+                <br/>
+            </label>
+            <br/><br/>
+            <input type = "submit" value = "Submit Query">
+        </form>
+    </body>
+</html>

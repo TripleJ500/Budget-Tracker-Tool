@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Delete Transaction</title>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    </head>
+    <body>
+        <h1>Delete A Transaction</h1>
+        <form action = "TransactionDeleteVerify.php" method = "post">
+            <label for = "transactionID"> Enter Transaction ID: </label>
+                <input type = "text" id = "transactionID" name = "transactionID">
+            <label>OR</label>
+            <br><br>
+            <label for = "deleteAll">Delete All Transactions?</label>
+            <br>
+                <label>
+                    <input type = "radio" id = "deleteAll" name = "response" value = 0 checked> No </input>
+                    <br/>
+                </label>
+                <label>
+                    <input type = "radio" id = "deleteAll" name = "response" value = 1> Yes </input>
+                    <br/>
+                </label>
+            <br/><br/>
+            <input type = "submit" name = "submit" value = "Submit Information"> 
+        </form>
+    </body>
+</html>
